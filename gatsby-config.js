@@ -123,18 +123,16 @@ module.exports = {
     },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-gatsby-cloud`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
-  ],
-}
-module.exports = {
-  plugins: [
     {
       resolve: `gatsby-source-wordpress-experimental`,
       options: {
         url: process.env.WPGRAPHQL_URL || `https://moments.latoken.com/moments/graphql`,
       },
     },
+
+    // this (optional) plugin enables Progressive Web App + Offline functionality
+    // To learn more, visit: https://gatsby.dev/offline
+    // `gatsby-plugin-offline`,
   ],
-};
+}
+    
