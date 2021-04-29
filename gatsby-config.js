@@ -128,3 +128,13 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 }
+module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-source-wordpress-experimental`,
+      options: {
+        url: process.env.WPGRAPHQL_URL || `https://moments.latoken.com/moments/graphql`,
+      },
+    },
+  ],
+};
